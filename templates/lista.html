@@ -57,13 +57,11 @@
             <td>
                 <a href="{{ url_for('deletar', id=livro.id) }}" class="btn btn-danger btn-sm" onclick="return confirm('Tem certeza de que deseja deletar este livro?');">Deletar</a>
              </td>
-             <a href="{{ url_for('logout') }}">Logout</a>
-             
-
           </tr>
           {% endfor %}
         </tbody>
       </table>
+      <a href="{{ url_for('logout') }}">Logout</a>
     </div>
     <footer>
       <p>&copy; 2024 SENAI. Todos os direitos reservados.</p>

@@ -8,7 +8,7 @@ with app.app_context():
     # Criação de um usuário de teste
     username = "admin"
     password = "senha123"
-    admin = User(username=username, password=password)
+    admin = User(username="admin", password="senha123", is_admin=True)
     db.session.add(admin)
     db.session.commit()
 
